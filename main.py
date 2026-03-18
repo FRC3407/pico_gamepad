@@ -59,10 +59,18 @@ class ButtonSet:
 gp = Gamepad(usb_hid.devices)
 
 button_list = [
-    GamepadButton(1, board.GP9),
-    GamepadButton(2, board.GP10),
-    GamepadButton(3, board.GP22),
-    GamepadButton(4, board.GP21),
+    GamepadButton(1, board.GP3),   # button 1
+    GamepadButton(2, board.GP5),   # button 2
+
+    GamepadButton(3, board.GP6),   # top left switch
+    GamepadButton(4, board.GP8),   # top right switch
+
+    GamepadButton(10, board.GP16),  # bottom right toggle - DOWN
+    GamepadButton(5, board.GP17), # buttom right toggle - UP
+ 
+    GamepadButton(6, board.GP14),  # bottom left toggle - UP
+    GamepadButton(12, board.GP12), # bottom left toggle - DOWN
+
 ]
 button_set = ButtonSet()
 
