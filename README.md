@@ -4,6 +4,8 @@ This project is a USB gamepad, implemented on a Raspberry Pi Pico, written in Ci
 
 Download [CircuitPython](https://circuitpython.org/downloads) for your Pico and install it. Then copy the `lib`, `boot.py`, and `main.py` files onto Pico.
 
+## Example 1
+
 ![files](./img/files_on_pico.png)
 
 Buttons should be attached to [pins on the Pico](./img/pico_pinouts.png) and then attached to the ground rails:
