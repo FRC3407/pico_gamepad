@@ -4,7 +4,7 @@ This project is a USB gamepad, implemented on a Raspberry Pi Pico, written in Ci
 
 Download [CircuitPython](https://circuitpython.org/downloads) for your Pico and install it. Then copy the `lib`, `boot.py`, and `main.py` files onto Pico.
 
-## Example 1
+## Example
 
 ![files](./img/files_on_pico.png)
 
@@ -14,7 +14,9 @@ Buttons should be attached to [pins on the Pico](./img/pico_pinouts.png) and the
 * `GP22` for gamepad button 3
 * `GP21` for gamepad button 4
 
-![Breadboard setup](./img/Gamepad_bb.png)
+The potentiometer in this example should be connected to `GP26`. There are only three "ADC" pins that can be used for potentiometers: `GP26`, `GP27`, and `GP28`.   Note that the power rail must be connected to the `3V3(OUT)` pin.
+
+![Breadboard setup](./img/Gamepad_2.png)
 
 ## References:
 * [AdaFruit_CircuitPython_HID Github repository](https://github.com/adafruit/Adafruit_CircuitPython_HID/tree/main)
